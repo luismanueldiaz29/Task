@@ -1,0 +1,19 @@
+<div>
+    <h1 class="h1">Listas</h1>
+</div>
+<div>
+    <table border="1">
+        <tr>
+            <th>Titulo</th>
+            <th>Descripcion</th>
+            <th>Prioridad</th>
+        </tr>
+        <tr *ngFor= "let task of tasks">
+            <td>{{task.title}}</td>
+            <td>{{task.description}}</td>
+            <td><span *ngIf="task.priority===true;"><b>priritario</b></span></td>
+            <td>Editar</td>
+            <td>Eliminar</td>
+        </tr>
+    </table>
+</div>

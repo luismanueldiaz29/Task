@@ -1,0 +1,19 @@
+<div class="form-group">
+    <label>Titulo:
+        <input [(ngModel)]="task.title" placeholder="dijite el titulo" type="text">
+    </label>
+</div>
+<div>
+    <label>Descripción:
+        <input [(ngModel)]="task.description" placeholder="dijite la descripcion" type="text">
+    </label>
+</div>
+<div>
+    <label>Prioritario:
+        <input [(ngModel)]="task.priority" type="checkbox">
+    </label>
+</div>
+
+<div>
+    <button (click)="add()" class="btn btn-primary">Agregar</button>
+</div>
